@@ -15,13 +15,13 @@ module.exports = function (file) {
     }
 
     function end() {
-        this.queue(add(buffer, getFileName(file)));
+        this.queue(add(getFileName(file), buffer));
         this.queue(buffer);
         this.queue(null)
     }
 
-    function add(script, file) {
-        return '(window.scriptStore = window.scriptStore || {})["' + file + '"] = "' + jsStringEscape(script) + '";'
+    function add(file, content) {
+        return '(window.scriptStore = window.scriptStore || {})["' + file + '"] = "' + jsStringEscape(content) + '";'
     }
 
     function isValidFile(file) {
