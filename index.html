@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Here</h1>
+        <pre id="js">JS</pre>
+
+        <script type="text/javascript" src="app.js"></script>
+        <script>
+            var pre = document.getElementById('js');
+            pre.innerHTML = window.scriptStore['main.js'];
+        </script>
+    </body>
+</html>

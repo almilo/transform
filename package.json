@@ -1,0 +1,20 @@
+{
+    "name": "transform",
+    "version": "0.0.0",
+    "license": "AVQ",
+    "atomify": {
+        "server": {
+            "lr": true,
+            "sync": true,
+            "open": true,
+            "path": "index.html"
+        },
+        "js": {
+            "entry": "main.js",
+            "alias": "app.js",
+            "transform": [
+                "script-store"
+            ]
+        }
+    }
+}
