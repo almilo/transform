@@ -31,7 +31,7 @@ module.exports = function (file) {
     }
 
     function getFileName(file) {
-        var lastSlashIndex = file.lastIndexOf('/'),
+        var lastSlashIndex = file.lastIndexOf('\\'),
             start = lastSlashIndex >= 0 ? lastSlashIndex + 1 : 0;
 
         return file.substr(start, file.length - start);

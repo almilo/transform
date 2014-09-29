@@ -1,5 +1,5 @@
 require('./example.js');
-require('./example.html')
+require('./example.html');
 
 var js = document.getElementById('js');
 js.innerHTML = window.scriptStore['example.js'];
